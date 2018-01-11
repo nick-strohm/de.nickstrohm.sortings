@@ -42,4 +42,31 @@ public class Tester {
 
         System.out.println(x[n - 1]);
     }
+
+    public static void sortWithBubbleSort(int[] x) {
+        int[] array = x.clone();
+        System.out.print("Bubble: ");
+        print(array);
+        Sort.bubbleSort(array, true);
+        System.out.print("Bubble: ");
+        print(array);
+    }
+
+    public static void sortWithSelectionSort(int[] x) {
+        int[] array = x.clone();
+        System.out.print("Selection: ");
+        print(array);
+        Sort.selectionSort(array);
+        System.out.print("Selection: ");
+        print(array);
+    }
+
+    public static void sortWithInsertionSort(int[] x) {
+        int[] array = x.clone();
+        System.out.print("Insertion: ");
+        print(array);
+        Sort.insertionSort(array);
+        System.out.print("Insertion: ");
+        print(array);
+    }
 }
