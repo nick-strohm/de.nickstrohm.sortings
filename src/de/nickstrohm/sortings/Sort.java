@@ -2,7 +2,7 @@ package de.nickstrohm.sortings;
 
 public class Sort {
     /**
-     * Swaps to variables inside an array
+     * Swaps two variables inside an array
      * @param   x           Array of ints
      * @param   left        First index
      * @param   right       Second index
