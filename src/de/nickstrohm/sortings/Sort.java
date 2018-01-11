@@ -22,10 +22,10 @@ public class Sort {
         int n = x.length;
         boolean swapped;
 
-        for (int i = 0; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             swapped = false;
 
-            for (int j = i; j < n - i; j++) {
+            for (int j = 0; j < n - i; j++) {
                 if (x[j] > x[j + 1] && ascending) {
                     swap(x, j, j + 1);
                     swapped = true;
@@ -72,13 +72,13 @@ public class Sort {
     public static void insertionSort(int[] x) {
         int n = x.length;
 
-        for (int i = 1; i < n; i++) {
+        for(int i = 1; i < n; i++) {
             int key = x[i];
             int j = i - 1;
 
-            while(j >= 0 && x[j] > key) {
+            while (j >= 0 && x[j] > key) {
                 x[j + 1] = x[j];
-                j++;
+                j--;
             }
 
             x[j + 1] = key;
